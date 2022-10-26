@@ -87,10 +87,7 @@ pre {
 }
 
 .hero{
-background: url('../images/pattern.png');
-/* background-repeat: no-repeat;
-background-position: left 50px bottom 50px;
-background-size: cover; */
+background-image: linear-gradient(to top, rgba(255,255,255,0.3) ,transparent), url('../images/pattern.png');
 height: 350px;
 }
 
