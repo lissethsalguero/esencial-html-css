@@ -91,3 +91,19 @@ background-image: linear-gradient(to top, rgba(255,255,255,0.3) ,transparent), u
 height: 350px;
 }
 
+h3::before{
+content: '-';
+}
+
+h3::after{
+  content: '';
+  width: 32px;
+  height: 4px;
+  background: red;
+  display: inline-block;
+}
+
+/* ::selection {
+  background: green;
+} */
+
