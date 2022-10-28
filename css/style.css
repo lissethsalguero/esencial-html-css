@@ -70,6 +70,12 @@ nav details summary {
 
 h1 {
   font-size: 60px;
+  /*Modelo de Caja*/
+    margin: 40.2px;
+    border: solid orange 11px;
+    padding: 22px;
+    /*content*/
+
   /* font-size: 3.75em; <=  60px/16px = 3.75em*/
   /* text-decoration: underline; */
 }
