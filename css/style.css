@@ -1,7 +1,7 @@
 @font-face {
   font-family: charter;
   src: url('../fonts/charter-regular.otf');
-  font-style:normal ;
+  font-style: normal;
   font-weight: 400;
 }
 
@@ -27,7 +27,7 @@
 }
 
 /*pseudo clases :root   ==  html   pero con mas prioridad*/
-:root{
+:root {
   font-size: 16px;
   --gray30: #212121;
   --gray25: #212429;
@@ -51,31 +51,32 @@ a {
 
 header {
   font-size: 14px;
-  color:var(--gray10);
+  color: var(--gray10);
 }
 
 header a {
-  color:var(--gray10);
+  color: var(--gray10);
   text-decoration: none;
 }
 
-header a:hover{
+header a:hover {
   color: var(--gray30);
 }
 
-nav details summary{
+nav details summary {
   /* color: red; */
   font-weight: bold;
 }
 
 h1 {
-   font-size: 60px;
-   /* font-size: 3.75em; <=  60px/16px = 3.75em*/
-   /* text-decoration: underline; */
+  font-size: 60px;
+  /* font-size: 3.75em; <=  60px/16px = 3.75em*/
+  /* text-decoration: underline; */
 }
 
 h2 {
-  font-size: 2em; /* <=  32px / 16px = 2em */
+  font-size: 2em;
+  /* <=  32px / 16px = 2em */
 }
 
 h3 {
@@ -83,19 +84,28 @@ h3 {
 }
 
 pre {
-  background: #FEC62E;;
+  background: #FEC62E;
+  ;
 }
 
-.hero{
-background-image: linear-gradient(to top, rgba(255,255,255,0.3) ,transparent), url('../images/pattern.png');
-height: 350px;
+.hero {
+  background-image: linear-gradient(to top, rgba(255, 255, 255, 0.3), transparent), url('../images/pattern.png');
+  height: 350px;
 }
 
-h3::before{
-content: '-';
+.section-content {
+  counter-reset: patito;
 }
 
-h3::after{
+.section-content h3 {
+  counter-increment: patito;
+}
+
+.section-content h3::before {
+  content: counter(patito, upper-roman)'.-';
+}
+
+.section-content h3::after {
   content: '';
   width: 32px;
   height: 4px;
@@ -106,4 +116,3 @@ h3::after{
 /* ::selection {
   background: green;
 } */
-
