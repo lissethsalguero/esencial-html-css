@@ -126,7 +126,26 @@ blockquote span{
 blockquote span::before{
   content: '-';
 }
+/*Seria componente base podria pintar el fondo*/
+.main{
+  background-image: linear-gradient(to top, rgba(255, 255, 255, 0.3), transparent), url('../images/pattern.png');
+  border: 1px solid red;
+  /* width: 902px;
+     margin: auto; */
+}
+/*delimita las fronteras del contenido como centrar */
+.wrapper{
+     width: 902px;
+     margin: auto;
+  /* padding: 20px; con el padding en el wrapper el width seria de 942 */
+}
 
+/*dar margen para no este pegado a la frontera*/
+.main-content{
+  /* background: blue; */
+  background: white;
+  padding: 20px;
+}
 
 .hero {
   background-image: linear-gradient(to top, rgba(255, 255, 255, 0.3), transparent), url('../images/pattern.png');
