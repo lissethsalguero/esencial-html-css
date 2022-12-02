@@ -68,6 +68,10 @@ nav details summary {
   /* color: red; */
   font-weight: bold;
 }
+/*Clase utilitaria p/ solamente hacer mi debug*/
+.debug {
+  border: 1px solid red
+}
 
 h1 {
   font-size: 60px;
@@ -75,10 +79,6 @@ h1 {
   /* text-decoration: underline; */
   margin-top: 64px;
   margin-bottom: 16px;
-  border: 10px solid red;
-  width: 400px;
-  height: 400px;
-  padding: 40px;
 }
 
 /* h1 + p {
@@ -101,10 +101,6 @@ h3 {
   margin-top: 16px;
   margin-bottom: 24px;
   font-weight: normal;
-  width: 200px;
-  padding: 20px;
-  border: 1px solid red;
-  box-sizing: border-box;/*OJO: para que quede con el ancho 200 y no hacer el calculo sin esto seria 242 el width*/
 }
 
 pre {
