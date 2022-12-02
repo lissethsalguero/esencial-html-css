@@ -70,8 +70,17 @@ nav details summary {
 }
 /*Clase utilitaria p/ solamente hacer mi debug*/
 .debug {
-  border: 1px solid red
+  box-shadow:inset 0 0 20px orange;
+
+  outline: 10px solid red;
+    /* //NOTA: outline => no afecta el modelo de caja */
+  background: pink;
+
+  border: 1px solid greenyellow !important;
+  box-sizing: border-box;
+    /* //NOTA:!important=>para no ser afectado por la cascada*/
 }
+
 
 h1 {
   font-size: 60px;
