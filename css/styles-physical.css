@@ -35,9 +35,10 @@
   --gray10: #616161;
 }
 
-/* html {
-  font-size: 16px;<=por defecto
-} */
+html {
+  /* font-size: 16px;<=por defecto */
+  scroll-behavior: smooth;
+}
 
 body {
   color: var(--gray30);
@@ -52,7 +53,16 @@ a {
 
 header {
   font-size: 14px;
+  width: 188px;
   color: var(--gray10);
+  position: absolute;
+  top: 64px;
+  left: -232px;
+  /* position: relative; */
+  /* position: absolute; */
+  /* position: fixed; */
+  /* position: sticky; */
+  /* top left bottom right z-index  */
 }
 
 header a {
@@ -67,6 +77,11 @@ header a:hover {
 nav details summary {
   /* color: red; */
   font-weight: bold;
+  line-height: 24px;
+}
+
+header li{
+  margin-bottom: 16px;
 }
 
 h1 {
@@ -75,6 +90,7 @@ h1 {
   /* text-decoration: underline; */
   margin-top: 64px;
   margin-bottom: 16px;
+  font-weight: normal;
 }
 
 /* h1 + p {
@@ -126,10 +142,20 @@ blockquote span{
 blockquote span::before{
   content: '-';
 }
+
+.header-content {
+  position: relative;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+}
+
 /*Seria componente base podria pintar el fondo*/
 .main{
-  background-image: linear-gradient(to top, rgba(255, 255, 255, 0.3), transparent), url('../images/pattern.png');
-  border: 1px solid red;
+  background: white;
+  /* background-image: linear-gradient(to top, rgba(255, 255, 255, 0.3), transparent), url('../images/pattern.png'); */
   /* width: 902px;
      margin: auto; */
 }
@@ -144,7 +170,6 @@ blockquote span::before{
 .main-content{
   /* background: blue; */
   background: white;
-  padding: 20px;
 }
 
 .hero {
@@ -183,7 +208,8 @@ margin-bottom: 16px;
 .section-content h3 {
   counter-increment: patito;
   /* background: red; */
-  padding-bottom: 4px;
+  padding-bottom: 8px;
+  position: relative;
 }
 
 .section-content h3::before {
@@ -193,10 +219,15 @@ margin-bottom: 16px;
 
 .section-content h3::after {
   content: '';
-  width: 32px;
+  width: 80px;
   height: 4px;
-  background: red;
+  background: var(--gray30);
   display: inline-block;
+
+  position: absolute;
+    left: 0;
+    bottom: 0;
+
 }
 
 /* ::selection {
