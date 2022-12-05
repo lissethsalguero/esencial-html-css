@@ -29,60 +29,55 @@
 /*pseudo clases :root   ==  html   pero con mas prioridad*/
 :root {
   font-size: 16px;
-  --gray30: #212121;
-  --gray25: #212429;
-  --gray20: #424242;
-  --gray10: #616161;
+  --white30: white;
+  --white20: #A5A3A5;
+  --white10: #3A3539;
 }
 
-/* html {
-  font-size: 16px;<=por defecto
-} */
-
 body {
-  color: var(--gray30);
-  font-family: 'Roboto', sans-serif;
-  /* font-family: charter; */
+  color: var(--white30);
+  font-family: 'Nunito', sans-serif;
+  background: #251F24;
 }
 
 a {
-  color: var(--gray30);
+  color: var(--white30);
 }
 
 header {
+  /* --white:red; */
   font-size: 14px;
-  color: var(--gray10);
+  color: var(--white);
+}
+
+header li {
+  color: var(--white20);
 }
 
 header a {
-  color: var(--gray10);
+  color: var(--white20);
   text-decoration: none;
 }
 
 header a:hover {
-  color: var(--gray30);
+  color: var(--white30);
+}
+nav details summary {
+  font-weight: bold;
 }
 
-nav details summary {
-  /* color: red; */
-  font-weight: bold;
+h1 h2 h3{
+  font-weight: normal;
 }
 
 h1 {
   font-size: 60px;
-  /*Modelo de Caja*/
-    margin: 40.2px;
-    border: solid orange 11px;
-    padding: 22px;
-    /*content*/
-
   /* font-size: 3.75em; <=  60px/16px = 3.75em*/
   /* text-decoration: underline; */
 }
 
 h2 {
   font-size: 2em;
-  /* <=  32px / 16px = 2em */
 }
 
 h3 {
@@ -90,12 +85,16 @@ h3 {
 }
 
 pre {
-  background: #FEC62E;
-  ;
+  background: var(--white10);
+}
+
+p{
+  color: var(--white20);
 }
 
 .hero {
-  background-image: linear-gradient(to top, rgba(255, 255, 255, 0.3), transparent), url('../images/pattern.png');
+  background: linear-gradient(96.07deg, #314755 30.63%, #26A0DA 102.18%);
+  /* background-image: linear-gradient(to top, rgba(255, 255, 255, 0.3), transparent), url('../images/pattern.png'); */
   height: 350px;
 }
 
