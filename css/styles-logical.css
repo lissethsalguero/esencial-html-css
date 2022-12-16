@@ -105,6 +105,14 @@ pre {
   padding: 40px;
   overflow: auto;
   border-radius: 8px;
+  border: 10px solid #5551ff;
+  box-shadow: -10px 10px 0 0 #abaaf6;
+  margin-block-end: 30px;
+  /* border-radius: 50%;
+  inline-size: 400px;
+  block-size: 400px; */
+  /* border-start-start-radius:60px; */
+
 }
 
 p{
