@@ -102,6 +102,9 @@ hr {
 
 pre {
   background: var(--white10);
+  padding: 40px;
+  overflow: auto;
+  border-radius: 8px;
 }
 
 p{
@@ -114,44 +117,61 @@ p{
   height: 350px;
 }
 
-.section-content {
-  counter-reset: patito;
-}
-
 .section-content img {
   margin-block-start: 40px;
   display: block;
 }
 
+.section-content {
+  counter-reset: patito;
+}
 .section-content h3 {
   counter-increment: patito;
 }
 
 .section-content h3::before {
-  /* content: counter(patito, upper-roman)'.-'; */
+ /* content: counter(patito, upper-roman)'.-';*/
   content: counter(patito, decimal)'. ';
 }
 
-.section-content h3::after {
+/* .section-content h3::after {
   content: '';
   width: 32px;
   height: 4px;
   background: red;
   display: inline-block;
-}
+} */
 
 blockquote {
   margin-block-start: 80px;
   margin-block-start: 63px;
   background-color: var(--white10);
   border-radius: 8px;
+  line-height: 32px;
+  font-size: 24px;
+  /* padding: 24px; */
+  padding-inline-end: 24px;
+  padding-inline-start: 24px;
+  padding-block-start: 24px;
+  padding-block-end: 24px;
+}
+
+blockquote p{
+  color: var(--white30);
 }
 
 .main hr {
    display: none;
 }
 
+main {
+}
 
-/* ::selection {
-  background: green;
-} */
+.wrapper{
+  max-inline-size: 902px;
+  margin: auto;
+}
+
+.main-content {
+  padding-inline: 16px;
+}
