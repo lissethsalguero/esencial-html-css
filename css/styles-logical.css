@@ -50,14 +50,35 @@ a {
   color: var(--white30);
 }
 
+.header {
+  position: sticky;
+  inset-block-start: -45px;
+}
+
+.header-content {
+  position: relative;
+  inset-block-start: 65px;
+}
+
 header {
   /* --white:red; */
   font-size: 14px;
   color: var(--white);
+  position: absolute;
+  /* top */
+  inset-block-start: 0px;
+  /* bottom */
+  /* inset-block-end: ; */
+  /* left */
+   inset-inline-start: -208px;
+  /* right */
+  /* inset-inline-end: ; */
+  inline-size: 188px;
 }
 
 header li {
   color: var(--white20);
+  margin-block-end: 16px;
 }
 
 header a {
@@ -68,6 +89,7 @@ header a {
 header a:hover {
   color: var(--white30);
 }
+
 nav details summary {
   font-weight: bold;
 }
