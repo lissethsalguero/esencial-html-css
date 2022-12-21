@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,9 +15,7 @@
     rel="stylesheet">
   <title>LOVE</title>
 </head>
-
 <body>
-
   <div class="hero"></div>
   <div class="header">
     <div class="wrapper">
@@ -157,7 +154,6 @@
 &lt;/body&gt;
 &lt;/html&gt;
 </pre>
-
           <h3 id="etiquetas">Etiquetas</h3>
           <p>Las etiquetas HTML van a ayudarnos a brindar una estructura y semántica al contenido de nuestro website y
             cada
@@ -167,7 +163,6 @@
             podremos darnos una pequeña idea de su uso pero en este curso vamos a usar las más importantes y que serán
             parte
             de tu día a día como Software Developer.</p>
-
           <h3 id="dom">DOM</h3>
           <p>El Document Object Model es una estructura de árbol que representará todos nuestros proyectos web como si
             un
@@ -175,7 +170,6 @@
             podemos
             identificar dependencias, herencias en css y que tan complejo es nuestro proyecto.</p>
           <img src="images/dom.png" alt="Estructura de árbol que representa al Document Object Model">
-
           <h3 id="semantica">Semántica</h3>
           <p>La semántica le brinda sentido a cada elemento existen en un sitio web, algunos elementos será meramente
             decorativos y no deben significar nada pero otros serán títulos y deberán estar en diferente jerarquías o
@@ -201,7 +195,6 @@
             para
             describir la presentación de documentos HTML.</P>
           <img src="images/css.png" alt="css">
-
         </section>
         <section class="section-content">
           <h2>Modelo de caja</h2>
@@ -232,6 +225,34 @@
               padding-inline-end</li>
           </ul>
         </section>
+      <div class="section-content">
+        <h2>Hola estos son algunos videos muy lindos</h2>
+        <div class="slider">
+          <scroll-container class="slider-container">
+           <scroll-page class="slider-slide" id="video-1">
+            <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/ScSHSI7TzRw" title="YouTube video player"
+              frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+           </scroll-page>
+            <scroll-page class="slider-slide" id="video-2">
+              <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/ShUgAiSY6Gk" title="YouTube video player"
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </scroll-page>
+            <scroll-page class="slider-slide" id="video-3">
+              <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/ScSHSI7TzRw"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </scroll-page>
+          </scroll-container>
+          <div class="slider-bullet-list">
+            <a href="#video-1"  class="slider-bullet"></a>
+            <a href="#video-2"  class="slider-bullet"></a>
+            <a href="#video-3"  class="slider-bullet"></a>
+          </div>
+        </div>
+      </div>
         <p>
           Si tienes alguna pregunta escríbeme a
           <a href="mailto:me@leonidasesteban.com">me@leonidasesteban.com</a>
@@ -241,5 +262,4 @@
     </div>
   </main>
 </body>
-
 </html>

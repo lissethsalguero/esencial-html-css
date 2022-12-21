@@ -70,7 +70,7 @@ header {
   /* bottom */
   /* inset-block-end: ; */
   /* left */
-   inset-inline-start: -208px;
+  inset-inline-start: -208px;
   /* right */
   /* inset-inline-end: ; */
   inline-size: 188px;
@@ -94,7 +94,7 @@ nav details summary {
   font-weight: bold;
 }
 
-h1 h2 h3{
+h1 h2 h3 {
   font-weight: normal;
 }
 
@@ -134,10 +134,9 @@ pre {
   inline-size: 400px;
   block-size: 400px; */
   /* border-start-start-radius:60px; */
-
 }
 
-p{
+p {
   color: var(--white20);
 }
 
@@ -155,12 +154,13 @@ p{
 .section-content {
   counter-reset: patito;
 }
+
 .section-content h3 {
   counter-increment: patito;
 }
 
 .section-content h3::before {
- /* content: counter(patito, upper-roman)'.-';*/
+  /* content: counter(patito, upper-roman)'.-';*/
   content: counter(patito, decimal)'. ';
 }
 
@@ -186,22 +186,51 @@ blockquote {
   padding-block-end: 24px;
 }
 
-blockquote p{
+blockquote p {
   color: var(--white30);
 }
 
 .main hr {
-   display: none;
+  display: none;
 }
 
-main {
-}
+main {}
 
-.wrapper{
+.wrapper {
   max-inline-size: 902px;
   margin: auto;
 }
 
 .main-content {
   padding-inline: 16px;
+}
+
+.slider-container {
+  /* block-size: 100px; => no tienen un alto u anclo los enline */
+  display: block;
+  overflow: auto;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+  overflow-x: hidden;
+}
+
+.video {
+  margin: 0;
+  display: inline-block;
+  /*inline no tiene tamaño, block le permite tenerlo*/
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+}
+.slider-bullet-list{
+text-align: center;
+margin-block-start: 10px;
+}
+
+.slider-bullet{
+display: inline-block;
+inline-size: 15px;
+block-size: 15px;
+border-radius: 50%;
+background: white;
 }
