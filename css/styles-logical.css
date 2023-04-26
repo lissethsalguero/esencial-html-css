@@ -234,3 +234,12 @@ block-size: 15px;
 border-radius: 50%;
 background: white;
 }
+
+.form input {
+  width: 100%;
+  border: 1px solid var(--white30);
+  background: #251F24;
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 16px;
+}
